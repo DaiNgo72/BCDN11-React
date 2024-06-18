@@ -25,4 +25,7 @@
 - Nhìn vào file package.json và file package-lock.json (nếu có). Để download thư viện về dự án.
 
 
+# jsx: html + js
 
+# Trong React:
+- Không được return về 2 thẻ cùng cấp với nhau. Cần thẻ cha bao bọc ngoài cùng.
