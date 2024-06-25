@@ -1,9 +1,9 @@
-import { ChangeColor } from "./modules/buoi-2/change-color";
+import { RenderArray } from "./modules/buoi-3/render-array";
 
 function App() {
   return (
     <>
-      <ChangeColor />
+      <RenderArray />
     </>
   );
 }

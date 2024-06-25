@@ -5,6 +5,7 @@
  * - String
  * - Number
  * - Array
+ * - JSX
  *
  * Không hiểu thị:
  * - Boolean
@@ -78,3 +79,4 @@ export function BindingData() {
     </>
   );
 }
+

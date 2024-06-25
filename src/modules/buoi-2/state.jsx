@@ -1,28 +1,5 @@
 import { useState } from "react";
 
-const _useState = (defaultValue) => {
-  let value = defaultValue;
-
-  const setValue = (newValue) => {
-    console.log(value);
-    value = newValue;
-  };
-
-  return [value, setValue];
-};
-
-let result = _useState(0);
-let count = result[0]; // 0
-let setCount = result[1];
-
-count++;
-count++;
-count++;
-
-setCount(10);
-
-console.log(count);
-
 export function State() {
   // let result = useState(0);
   // let [count, setCount] = result;

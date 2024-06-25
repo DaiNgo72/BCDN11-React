@@ -29,3 +29,13 @@
 
 # Trong React:
 - Không được return về 2 thẻ cùng cấp với nhau. Cần thẻ cha bao bọc ngoài cùng.
+
+# npm: 
+- Quản lý các thư viện (package)
+
+# npx:
+- Giúp chúng ta chạy lệnh của thư viện
+## TH1: Đã cài thư viện
+- Đi vào node_modules/bin tìm đến thư viện
+## TH2: Chưa cài thư viện
+- Lên [npm](https://www.npmjs.com/) tìm và tải thư viện về và thực thi câu lệnh của thư viện. Không tạo ra folder node_modules
