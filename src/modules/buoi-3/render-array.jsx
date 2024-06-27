@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 /**
  * ** React cho phép chúng ta render trực tiếp một mảng lên giao diện.
- * 
+ *
  * Khi render mỗi phần tử của array, phải có prop key và là duy nhất trong mảng đó.
  * Prop key phải đặt ở thẻ bao bọc lớn nhất ngoài cùng.
  */
