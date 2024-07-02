@@ -1,34 +1,9 @@
-import { useState } from "react";
-import { ShoesShop } from "./modules/buoi-4/shoes-shop";
-
-function Count({ children }) {
-  const [c, setC] = useState(0);
-
-  return (
-    <>
-      <button
-        onClick={() => {
-          setC((c) => c + 1);
-        }}
-      >
-        {children(c)}
-      </button>
-    </>
-  );
-}
+import { PhoneShop } from "./modules/buoi-5/phone-shop";
 
 function App() {
-  const a = 10;
-
   return (
     <>
-      <Count>
-        {(count) => {
-          return <>{count + a}</>;
-        }}
-      </Count>
-
-      <ShoesShop />
+      <PhoneShop />
     </>
   );
 }
