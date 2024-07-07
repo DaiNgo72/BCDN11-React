@@ -1,4 +1,11 @@
+/**
+ * Updating:
+ * + Khi props thay đổi.
+ * + Khi component cha re-render -> component con re-render
+ */
+
 export function GioHang({ listSanPham, onDelete, onTang, onGiam }) {
+  console.log("🚀 >>>::::::::: giohang :::::::::");
   return (
     <>
       <table className="table table-striped">

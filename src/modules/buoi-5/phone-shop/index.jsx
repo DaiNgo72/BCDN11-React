@@ -1,14 +1,35 @@
-import { Fragment, useState } from "react";
+import { Fragment, useEffect, useState } from "react";
 import { mockData } from "./__mock-data__";
 import { Card } from "./components/card";
 import { XemChiTiet } from "./components/xem-chi-tiet";
 import { GioHang } from "./components/gio-hang";
 import { transformSanPham } from "./utils";
 
+// - Updating:
+//     + Khi state thay đổi.
+//     + Khi component cha re-render -> component con re-render
+
 export function PhoneShop() {
+  console.log("🚀 >>>::::::::: phoneshop :::::::::");
   const [listSanPham, setListSanPham] = useState([]);
+  // Thay đổi giá trị trực tiếp của state. (mutate)
+
+  // 1. Ox111111
+  // 2. Ox222222
+  // 3.
 
   const [phoneDetail, setPhoneDetail] = useState(mockData[0]);
+
+  useEffect(() => {
+    // Ox111111
+    console.log("🚀 >>>::::::::: 1111 :::::::::", listSanPham);
+
+    // clean-up function.
+    return () => {
+      // Ox111111
+      console.log("🚀 >>>::::::::: un-mounting :::::::::", listSanPham);
+    };
+  }, []);
 
   const onChangePhoneDetail = (phone) => {
     setPhoneDetail(phone);
@@ -16,9 +37,10 @@ export function PhoneShop() {
 
   const onAddSanPham = (sanPham) => {
     sanPham = transformSanPham(sanPham);
+    const newList = [...listSanPham];
 
     // 1. Đã tồn tại hay chưa
-    const item = listSanPham.find((i) => i.id === sanPham.id);
+    const item = newList.find((i) => i.id === sanPham.id);
 
     // True: Tăng số lượng
     if (item) {
@@ -26,10 +48,13 @@ export function PhoneShop() {
     }
     // False: Thêm vào
     else {
-      listSanPham.push(sanPham);
+      // Ox111111
+      // Ox222222
+      newList.push(sanPham);
+      // listSanPham.push(sanPham); // ❌
     }
 
-    setListSanPham([...listSanPham]);
+    setListSanPham(newList);
 
     // setListSanPham((c) => [...c, sanPham]);
   };
