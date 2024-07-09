@@ -85,3 +85,22 @@ Observer pattern
 - useMemo: Ghi nhớ giá trị của biến. ( tính toán quá phức tạp, 5% dev fe sẽ gặp )
 
 Điểm yếu: tốn bộ nhớ.
+
+# Single Page Application:
+- Chỉ có 1 file html duy nhất.
+- Mỗi đường dẫn sẽ sử dụng JS render lại.
+
+# Multiple Page Application:
+- Nhiều file html.
+- Mỗi đường dẫn trang web sẽ sử dụng 1 file html khác nhau để render.
+
+# Client side rendering.
+- Nội dung được render bởi phía người dùng (browser). Dùng js render ra giao diện.
+
+# Server side rendering.
+- Nội dung được render bởi phía server. Trả về đã có sẵn content bên trong.
+
+# Static Site Generation.
+
+# Pure function.
+- Same input -> Same output.
