@@ -5,9 +5,9 @@ function App() {
     <>
       <TodoList />
 
-      <hr />
+      {/* <hr />
 
-      <TodoList />
+      <TodoList /> */}
 
     </>
   );
