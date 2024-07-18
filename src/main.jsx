@@ -2,6 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 
+import { Provider } from "react-redux";
+import { store } from "./redux/store.js";
 /**
  * *Note*:
  * - Khi tạo thẻ tự tạo phải bắt đầu bằng chữ In Hoa, để phân biệt thẻ trong html.
@@ -16,7 +18,9 @@ import App from "./App.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <>
-    <App />
+    <Provider store={store}>
+      <App />
+    </Provider>
   </>,
 );
 
