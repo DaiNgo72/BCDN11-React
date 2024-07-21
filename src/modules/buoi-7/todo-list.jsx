@@ -108,6 +108,7 @@ export function TodoList() {
     <>
       {/* two way binding */}
       <input
+        setTodos={setTodos}
         // set
         value={search}
         placeholder="search"

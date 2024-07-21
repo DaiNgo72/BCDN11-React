@@ -1,14 +1,9 @@
-import { TodoList } from "./modules/buoi-7/todo-list";
+import { ChangeColor } from "./modules/buoi-9/change-color";
 
 function App() {
   return (
     <>
-      <TodoList />
-
-      {/* <hr />
-
-      <TodoList /> */}
-
+      <ChangeColor />
     </>
   );
 }
