@@ -2,11 +2,19 @@ import { useRef, useState, useEffect } from "react";
 import { Todo } from "./todo";
 import { getQueryString } from "./utils";
 
+// impure function
+// global variable
+let valueSearch = "";
+
 export function TodoList() {
   // state
   const [todos, setTodos] = useState([]);
 
   const [search, setSearch] = useState("");
+
+  const [countReducer] = useState({
+    count: 1,
+  });
 
   /**
    * editID: nếu có id thì chứng tỏ đang edit todo.
@@ -113,11 +121,19 @@ export function TodoList() {
         placeholder="search"
         onChange={(event) => {
           // get
-          console.log(event.target.value);
+          valueSearch = event.target.value;
 
           setSearch(event.target.value);
         }}
       />
+
+      <button
+        onClick={() => {
+          console.log(valueSearch);
+        }}
+      >
+        Click
+      </button>
 
       <hr />
 
@@ -142,15 +158,17 @@ export function TodoList() {
           );
         })}
       </ul>
+
+      {/* <Todos id="1" /> */}
     </>
   );
 }
 
-// function Todos() {
+// function Todos({ id }) {
 //   return (
 //     <ul>
 //       {todos.map((t) => {
-//         return <Todo />;
+//         return <Todo id={id} />;
 //       })}
 //     </ul>
 //   );

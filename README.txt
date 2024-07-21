@@ -104,3 +104,17 @@ Observer pattern
 
 # Pure function.
 - Same input -> Same output.
+
+
+# Redux - (context)
+- State global: Có giá trị giống nhau trong toàn bộ ứng dụng + State (Làm component re-render khi có state thay đổi)
+- Tránh props drilling (https://www.freecodecamp.org/news/avoid-prop-drilling-in-react)
+
+1. Setup store (v)
+2. Kết nối redux - react (v)
+3. Setup state trên redux (v)
+4. Lấy state trên redux về component (v)
+5. Cập nhật state trên redux 
+5.1: Gửi (v)
+5.2: Nhận (v)
+

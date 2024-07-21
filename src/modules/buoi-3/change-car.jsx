@@ -13,6 +13,7 @@ export function ChangeCar() {
     name: "Silver Car",
     image: "/images/silver-car.jpg",
   });
+
   // 3. logic
 
   const getUrl = (name) => {
